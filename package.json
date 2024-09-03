@@ -1,0 +1,17 @@
+{
+  "name": "cypresstest",
+  "version": "1.0.0",
+  "description": "Homework Cypress",
+  "main": "index.js",
+  "scripts": {
+    "web:headed": "cypress run --browser chrome --headed cypress.config.js",
+    "web:headless": "cypress run --browser edge --headless cypress.config.js",
+    "mobile:headed": "cypress run --browser edge --headed --config-file cypressmobile.config.js",
+    "mobile:headless": "cypress run --browser chrome --headless --config-file cypressmobile.config.js"
+  },
+  "author": "Irina Denisova",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.14.1"
+  }
+}
